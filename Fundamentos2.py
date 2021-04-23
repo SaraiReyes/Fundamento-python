@@ -67,9 +67,37 @@ while numero<10:
     numero+=1
     print(numero)
 
-digito=int(input("Dame un número mayor a 10"))
+digito=int(input("Dame un número mayor a 10: "))
 while digito<10:
     print("por favor ingresa un número mayor a 5: ")
-    digito=int(input("Dame un número mayor a 5"))
+    digito=int(input("Dame un número mayor a 5 "))
 
-print("el cuadrado de ese número es",digito**2)
+print("el cuadrado de ese número es ",digito**2)
+################################################################################################################
+#   for
+
+for i in [1,7,3,7,2,7,1]:
+    print(f'El valor es {i}')
+# sumar los números de 1 añ 100
+resultSuma=0
+# range lo que hace es tomar el valor que le das y retrocede 1 hasta llegar a 0
+for i in range(101):
+    resultSuma+=i;
+
+print(f'La suma total de todos los números del 0 al 100 {resultSuma}')
+################################################################################################################
+# conjuntos
+
+conjuntoa={2,5,3,7}
+conjuntob={5,9,3,1}
+# comparación
+print(conjuntoa==conjuntob)
+# Unión
+print(conjuntoa|conjuntob)
+# intersección
+print(conjuntoa&conjuntob)
+# diferencia
+print(conjuntoa-conjuntob)
+print(conjuntob-conjuntoa)
+# diferencia simetrica
+print(conjuntoa^conjuntob)
